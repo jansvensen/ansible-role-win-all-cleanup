@@ -38,7 +38,7 @@
 
 - name: Copy files to files directory
   ansible.windows.win_copy:
-    src: /files/*
+    src: files/*
     dest: 'c:\files\'
 
 - name: Reboot
