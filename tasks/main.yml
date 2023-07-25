@@ -37,6 +37,7 @@
     state: directory
 
 - name: Copy files to files directory
+  become: true
   ansible.windows.win_copy:
     src: files/*
     dest: 'c:\files\'
