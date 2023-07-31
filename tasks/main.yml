@@ -25,11 +25,11 @@
     path: '{{ item }}'
     state: absent
   loop:
-    - 'c:\Install'
+    - '{{ directory_install }}'
     - 'c:\Script'
     - 'c:\Log'
     - 'c:\Logs'
-    - 'c:\GPO'
+    - '{{ directory_gpo }}'
 
 - name: Reboot
   win_reboot:
