@@ -26,9 +26,7 @@
     state: absent
   loop:
     - '{{ directory_install }}'
-    - 'c:\Script'
-    - 'c:\Log'
-    - 'c:\Logs'
+    - '{{ directory_logging }}'
     - '{{ directory_gpo }}'
 
 - name: Reboot
