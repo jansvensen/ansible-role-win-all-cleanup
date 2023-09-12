@@ -5,7 +5,7 @@
     script: |
       [string]$SystemDriveLetter = ($env:SYSTEMDRIVE).TrimEnd(":")
       Set-Volume -DriveLetter $SystemDriveLetter -NewFileSystemLabel "System Drive"
-    notify: reboot
+  notify: reboot
 
 - name: Set local administrator password to never expire
   ansible.windows.win_powershell:
