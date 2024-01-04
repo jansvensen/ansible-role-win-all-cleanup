@@ -26,21 +26,21 @@
 
 - name: Delete installation directory
   ansible.windows.win_file:
-    path: '{{ directory_install }}'
+    path: '{{ win.directory.install }}'
     state: absent
-  when: directory_install is defined
+  when: win.directory.install is defined
   notify: reboot
 
 - name: Delete logging directory
   ansible.windows.win_file:
-    path: '{{ directory_logging }}'
+    path: '{{ win.directory.logging }}'
     state: absent
-  when: directory_logging is defined
+  when: win.directory.logging is defined
   notify: reboot
 
 - name: Delete gpo directory
   ansible.windows.win_file:
-    path: '{{ directory_gpo }}'
+    path: '{{ win.directory.gpo }}'
     state: absent  
-  when: directory_gpo is defined
+  when: win.directory.gpo is defined
   notify: reboot

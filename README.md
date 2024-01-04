@@ -13,9 +13,9 @@ This role
 
 ## Role Variables
 
-- directory_install: Directory used for install files during installation and configuration
-- directory_logging: Directory used for logging during installation and configuration
-- directory_gpo: Directory used for gpo content during installation and configuration
+- win.directory.install: Directory used for install files during installation and configuration
+- win.directory.logging: Directory used for logging during installation and configuration
+- win.directory.gpo: Directory used for gpo content during installation and configuration
 
 ## Dependencies
 
